@@ -1,7 +1,13 @@
 # azuresphere-get-started
 
-For a very beginner
+Beginner :
+
 [Environment Setup](./env_setup.md)
 
-For Developer
+Developer :
+
 [Azure Sphere s/w and h/w reference design](./app_dev.md)
+
+Machine Learning :
+
+[Vision AI on Azure Sphere](https://github.com/sha1painkiller/careerhack2021-workshop-aiot#azure-sphere-vision-kit)

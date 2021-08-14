@@ -38,20 +38,22 @@ Successfully claimed device ID '\<device ID>' into tenant '\<name>' with ID 'd34
     - > azsphere device enable-development
 
 ## Create a cloud deployment (production mode)
-1. Create a product for the device
+1. Upload an image to AS3
+    - > azsphere image show --image <image-ID>
+3. Create a product for the device
     - > azsphere product create --name \<product name> --description "\<product description>"
-1. Enable cloud based deployment for your device
+4. Enable cloud based deployment for your device
     - > azsphere device enable-cloud-test --product \<product name>
-1. List current available device groups
+5. List current available device groups
     - > azsphere device-group list
-1. Create a new deployment for a device group
+6. Create a new deployment for a device group
     - > azsphere device-group deployment create --device-group \<device-group-ID> --images \<image-ID>
     - or
     - > azsphere device-group deployment create --device-group '\<product-name>/\<device-group-name>' --images \<image-ID>
-1. Trigger the deployment
+7. Trigger the deployment
     - To trigger the download immediately, press the <span style="color:red">**RESET**</span> button on (or power reset) the Azure Sphere device, Or the image will happen when next device attestation occurs (within 24 hours).
     - To verify that the application was installed on your device, use the
         - > azsphere device image list-installed
-1. Reenable development and debugging
+8. Reenable development and debugging
     - > azsphere device enable-development
 

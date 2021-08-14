@@ -39,7 +39,7 @@ Successfully claimed device ID '\<device ID>' into tenant '\<name>' with ID 'd34
 
 ## Create a cloud deployment (production mode)
 1. Upload an image to AS3
-    - > azsphere image show --image \<image-ID>
+    - > azsphere image add --image \<image-ID>
 3. Create a product for the device
     - > azsphere product create --name \<product name> --description "\<product description>"
 4. Enable cloud based deployment for your device
